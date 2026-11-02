@@ -883,3 +883,66 @@ code {
     transition-duration: .01ms !important;
   }
 }
+
+/* ---------- guia de instalação ---------- */
+
+.guia { padding: 56px 0 80px; }
+.guia-conteudo { max-width: 800px; }
+
+.guia h1 {
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  margin-bottom: 12px;
+}
+.guia-sub { color: var(--suave); margin-bottom: 30px; max-width: 60ch; }
+
+.guia-passo {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 18px;
+  padding: 22px 0;
+  border-top: 1px solid var(--linha-suave);
+}
+.guia-numero {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 196, 107, .14);
+  border: 1px solid rgba(255, 196, 107, .32);
+  color: var(--ambar);
+  font-weight: 800;
+}
+.guia-passo h2 { font-size: 1.1rem; margin-bottom: 8px; }
+.guia-passo p, .guia-passo li {
+  color: var(--suave);
+  font-size: .95rem;
+  line-height: 1.65;
+}
+.guia-passo ol { margin: 10px 0 0; padding-left: 20px; }
+
+.guia-caixa {
+  margin: 14px 0;
+  padding: 16px 18px;
+  border-radius: 10px;
+  background: #f3f3f3;
+  color: #1a2332;
+  border: 1px solid #d9d9d9;
+  font-size: .9rem;
+  line-height: 1.6;
+}
+.guia-caixa b { color: #0b5394; }
+
+.guia-aviso {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 196, 107, .3);
+  background: rgba(255, 196, 107, .07);
+}
+.guia-aviso h2 { font-size: 1rem; margin-bottom: 8px; color: var(--ambar); }
+.guia-aviso p { color: var(--suave); font-size: .92rem; line-height: 1.6; }
+
+@media (max-width: 520px) {
+  .guia-passo { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .guia-numero { width: 34px; height: 34px; }
+}

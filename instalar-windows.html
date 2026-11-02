@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instalar no Windows — Alumínio Manager</title>
+  <meta name="description" content="Guia rápido para instalar o Alumínio Manager no Windows, incluindo o aviso de segurança do SmartScreen e a ligação à base de dados.">
+  <meta name="theme-color" content="#1e1e1e">
+  <link rel="icon" href="assets/favicon.png" sizes="64x64" type="image/png">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="envolvente topo-linha">
+      <a class="marca" href="index.html" aria-label="HCsoftware — início">
+        <img src="assets/logo-hcsoftware.png" alt="HCsoftware" width="270" height="78">
+      </a>
+      <a class="botao botao-fantasma botao-github" style="margin-left:auto" href="index.html">← Voltar</a>
+    </div>
+  </header>
+
+  <main class="guia">
+    <div class="envolvente guia-conteudo">
+      <p class="etiqueta">Guia rápido</p>
+      <h1>Instalar no Windows</h1>
+      <p class="guia-sub">
+        O Alumínio Manager não tem instalador: é um ficheiro único. Em quatro passos fica a
+        funcionar — e não precisa de Internet depois de descarregado.
+      </p>
+
+      <section class="guia-passo">
+        <span class="guia-numero">1</span>
+        <div>
+          <h2>Descarregar o programa</h2>
+          <p>
+            Descarrega o ficheiro
+            <a href="https://github.com/condessa/Aluminio-Manager/releases/download/v1.5.8/AluminioManager-1.5.8.exe">AluminioManager-1.5.8.exe</a>
+            (95 MB) e guarda-o, por exemplo, na pasta «Transferências».
+          </p>
+        </div>
+      </section>
+
+      <section class="guia-passo">
+        <span class="guia-numero">2</span>
+        <div>
+          <h2>Executar e passar o aviso do Windows</h2>
+          <p>Faz duplo clique no ficheiro. É normal aparecer uma janela azul com este texto:</p>
+          <div class="guia-caixa">
+            <b>O Windows protegeu o seu PC</b><br>
+            O Microsoft Defender SmartScreen impediu o arranque de uma aplicação desconhecida.<br><br>
+            Clica em <b>Mais informações</b> e depois em <b>Executar mesmo assim</b>.
+          </div>
+          <p>
+            Este aviso aparece a <strong>qualquer programa novo</strong> que não tenha um
+            certificado de assinatura pago. O Alumínio Manager é gratuito e de código aberto,
+            mas não tem esse certificado anual — por isso o Windows ainda não o conhece.
+          </p>
+        </div>
+      </section>
+
+      <section class="guia-passo">
+        <span class="guia-numero">3</span>
+        <div>
+          <h2>Ligar a base de dados</h2>
+          <p>
+            Os dados ficam no MySQL/MariaDB do computador. Se já tens o <strong>XAMPP</strong>
+            (ou o MySQL/MariaDB) instalado:
+          </p>
+          <ol>
+            <li>No painel do XAMPP, carrega em <strong>Start</strong> no MySQL.</li>
+            <li>Na janela do programa, carrega em <strong>«Configurar automaticamente»</strong>.</li>
+          </ol>
+          <p>
+            Se o programa não encontrar o MySQL, carrega em <strong>«Escolher o mysql.exe…»</strong>
+            e indica o ficheiro — normalmente
+            <code>C:\xampp\mysql\bin\mysql.exe</code>. O caminho fica guardado para as próximas vezes.
+          </p>
+        </div>
+      </section>
+
+      <section class="guia-passo">
+        <span class="guia-numero">4</span>
+        <div>
+          <h2>Criar a empresa e o administrador</h2>
+          <p>
+            Na primeira utilização o programa pede o nome da empresa e a conta de administrador
+            que quiseres criar. Depois entra diretamente — não existem contas pré-definidas.
+          </p>
+        </div>
+      </section>
+
+      <div class="guia-aviso">
+        <h2>Não abriu ou fechou?</h2>
+        <p>
+          O programa escreve um registo em
+          <code>%USERPROFILE%\.config\aluminio-manager\erro.log</code>. Abre esse ficheiro e
+          envia-o para apoio — assim vemos exatamente o que falhou, sem adivinhar.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="envolvente rodape-linha">
+      <p>© 2026 HCsoftware · Feito em Portugal</p>
+      <p class="rodape-nota">Alumínio Manager · GPLv3</p>
+    </div>
+  </footer>
+</body>
+</html>
