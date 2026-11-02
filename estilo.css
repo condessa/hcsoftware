@@ -570,6 +570,12 @@ code {
   padding: 3px 9px;
 }
 
+.cartao-nota {
+  margin: -6px 0 16px;
+  font-size: .78rem;
+  color: var(--fraco);
+}
+
 .cartao-acoes {
   display: flex;
   align-items: center;
@@ -859,7 +865,13 @@ code {
   .cartao { padding: 18px; }
   .descarregamentos { width: 100%; }
   .botao-descarregar { flex: 1 1 auto; justify-content: center; }
-  .cartao-acoes { flex-wrap: wrap; }
+  .cartao-nota {
+  margin: -6px 0 16px;
+  font-size: .78rem;
+  color: var(--fraco);
+}
+
+.cartao-acoes { flex-wrap: wrap; }
   .rodape-linha { flex-direction: column; align-items: flex-start; }
   .rodape-nota { text-align: left; }
 }
