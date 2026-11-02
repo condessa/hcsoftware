@@ -1,5 +1,7 @@
 # Site HCsoftware
 
+**No ar:** <https://condessa.github.io/hcsoftware/> · repositório: <https://github.com/condessa/hcsoftware>
+
 Página única que reúne todos os programas gratuitos do HCsoftware, com descrição,
 plataformas e botões de download direto para os instaladores publicados no GitHub.
 
@@ -30,6 +32,8 @@ Depois abrir <http://localhost:8000>. (Abrir o `index.html` diretamente também 
 mas a atualização automática da versão pode ser bloqueada pelo browser.)
 
 ## Publicar no GitHub Pages (gratuito)
+
+Já está publicado. Se um dia precisares de refazer a configuração:
 
 1. Criar um repositório **público** chamado `hcsoftware` em <https://github.com/condessa>.
 2. Enviar o conteúdo desta pasta para a raiz desse repositório (`index.html` na raiz).
